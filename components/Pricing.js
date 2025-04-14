@@ -10,7 +10,6 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
