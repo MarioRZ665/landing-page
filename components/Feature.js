@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
+  "Programación a medida: sitios web, e-commerce, sistemas internos, automatizaciones y más.",
+  "Marketing digital inteligente: campañas en redes sociales, SEO, email marketing, branding y análisis de datos.",
+  "Experiencia de usuario (UX/UI): creamos interfaces intuitivas, modernas y enfocadas en la conversión.",
+  "Soporte continuo y optimización: no solo entregamos proyectos, sino que trabajamos contigo para mejorar continuamente la presencia y el rendimiento de tus plataformas a lo largo del tiempo."
 ]
 
 const Feature = () => {
@@ -34,33 +34,35 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
 
-        <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
-          </h3>
-          <p className="my-2 text-black-500">
-            You can explore the features that we provide with fun and have their
-            own functions each feature.
-          </p>
-          <ul className="text-black-500 self-start list-inside ml-8">
-            {features.map((feature, index) => (
-              <motion.li
-                className="relative circle-check custom-list"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={feature}
-                whileHover={{
-                scale : 1.1,
-                transition: {
-                  duration: .2
-                }
-                }}>
+          <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-12/12" variants={scrollAnimation}>
+            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+              ¿Qué hacemos?
+            </h3>
+            <p className="my-2 text-black-500">
+              En nuestra empresa unimos lo mejor de dos mundos: la tecnología y la creatividad.
+              Nos especializamos en ofrecer soluciones digitales integrales que impulsan el crecimiento de marcas, emprendedores y empresas.
+
+              Desde el desarrollo de plataformas web, aplicaciones personalizadas y sistemas a medida, hasta la creación de estrategias de marketing digital enfocadas en resultados reales.
+            </p>
+            <ul className="text-black-500 self-start list-inside ml-8">
+              {features.map((feature, index) => (
+                <motion.li
+                  className="relative circle-check custom-list"
+                  custom={{ duration: 2 + index }}
+                  variants={scrollAnimation}
+                  key={feature}
+                  whileHover={{
+                    scale: 1.1,
+                    transition: {
+                      duration: .2
+                    }
+                  }}>
                   {feature}
-              </motion.li>
+                </motion.li>
               )
-            )}
-          </ul>
-        </motion.div>
+              )}
+            </ul>
+          </motion.div>
         </ScrollAnimationWrapper>
       </div>
     </div>
