@@ -78,7 +78,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Precios
             </LinkScroll>
             <LinkScroll
               activeClass="active"

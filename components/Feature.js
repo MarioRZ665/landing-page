@@ -34,7 +34,7 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
 
-          <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-12/12" variants={scrollAnimation}>
+          <motion.div className="flex flex-col items-left justify-center ml-auto w-full lg:w-12/12" variants={scrollAnimation}>
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
               ¿Qué hacemos?
             </h3>
