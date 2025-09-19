@@ -1,21 +1,17 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-
 // Default value for some meta data
 const defaultMeta = {
-  title: 'Eetail technologies',
-  siteName: 'Eetail technologies',
+  title: 'Rápidos de la Cuenca | Paquetería y Envíos Seguros en México',
+  siteName: 'Rápidos de la Cuenca',
   description:
-    'Empresa de tecnología enfocada en la innovación, herramientas de gestión, conectividad y servicios especializados de TI',
-  // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+    'Rápidos de la Cuenca ofrece servicios de paquetería, mensajería y envíos urgentes en todo México. Rastreo en línea, entregas rápidas y seguras a tu destino.',
+  url: 'https://rapidosdelacuenca.com.mx',
   type: 'website',
   robots: 'follow, index',
-  // change with url of your image (recommended dimension = 1.91:1)
-  // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
-  author: 'Lorem Ipsum'
+  image: 'https://rapidosdelacuenca.com.mx/assets/card-image.png',
+  author: 'Rápidos de la Cuenca'
 };
 
 /**

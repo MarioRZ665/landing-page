@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "LaslesVPN",
-  "short_name": "LaslesVPN",
+  "name": "Rapidos de la Cuenca",
+  "short_name": "Rapidos de la Cuenca",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#F53838",
-  "description": "LaslesVPN Best VPN For Privacy, Country and Cheapest.",
+  "description": "Servicios de Mensajería y Paquetería Foránea en México.",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",

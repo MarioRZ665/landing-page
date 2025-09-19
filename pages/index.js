@@ -7,7 +7,11 @@ import SeoHead from "../components/SeoHead";
 export default function Home() {
 	return (
 		<>
-			<SeoHead title='Soluciones TI para Empresas | Retail, Cloud, Consultoría Tech y Mobile' />
+			<SeoHead
+				title="Rápidos de la Cuenca | Paquetería y Mensajería Segura en México"
+				description="Envíos rápidos y confiables con Rápidos de la Cuenca. Rastrea tu paquete en línea, mensajería foránea y paquetería segura en todo México."
+				keywords="paquetería, mensajería, envíos, logística, rastreo de paquetes, Rápidos de la Cuenca"
+			/>
 			<Layout>
 				<Hero />
 				<Feature />
