@@ -48,12 +48,14 @@ const Hero = ({
         >
           <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <section className="text-center sm:text-left py-12 px-4 bg-white">
+              {/* ===== INICIO DE LA MEJORA ===== */}
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Envíos Rápidos y Seguros en todo México
+                Rapidos de la cuenca: Envíos Rápidos y Seguros
               </h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-                Con 10 años de experiencia, ofrecemos entregas locales desde 2 horas, cobertura nacional y envíos internacionales a más de 100 países. Tu solución logística de confianza.
+                Con una década de experiencia, garantizamos la entrega puntual de tus envíos. Ofrecemos soluciones ágiles para entregas locales desde 2 horas, una sólida cobertura en todo México. Somos tu aliado estratégico en logística.
               </p>
+              {/* ===== FIN DE LA MEJORA ===== */}
             </section>
 
             <div className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-5 mt-6">
@@ -84,7 +86,7 @@ const Hero = ({
             <motion.div className="h-full w-full" variants={scrollAnimation}>
               <Image
                 src="/assets/truck-1.png"
-                alt="Camión de envíos y paquetería"
+                alt="Camión de envíos y paquetería de Rapidos de la cuenca"
                 quality={100}
                 width={800}
                 height={600}
