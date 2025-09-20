@@ -8,11 +8,18 @@ import LogoVPN from "../../public/assets/Logo.svg";
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
+  
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       setScrollActive(window.scrollY > 20);
-    });
+    };
+    window.addEventListener("scroll", handleScroll);
+    // Limpieza del event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
   return (
     <>
       <header
@@ -62,6 +69,7 @@ const Header = () => {
             >
               Qué hacemos.
             </LinkScroll>
+            {/* AQUÍ EL CAMBIO para el menú de escritorio */}
             <LinkScroll
               activeClass="active"
               to="pricing"
@@ -78,7 +86,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Precios
+              ¿Qué servicios ofrecemos?
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -102,7 +110,7 @@ const Header = () => {
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+                  Sign In
               </a>
             </Link>
             <ButtonOutline>Sign Up</ButtonOutline>
@@ -178,6 +186,7 @@ const Header = () => {
               </svg>
               Feature
             </LinkScroll>
+            {/* AQUÍ EL CAMBIO para el menú móvil */}
             <LinkScroll
               activeClass="active"
               to="pricing"
@@ -208,7 +217,7 @@ const Header = () => {
                   d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Pricing
+              Servicios
             </LinkScroll>
             <LinkScroll
               activeClass="active"

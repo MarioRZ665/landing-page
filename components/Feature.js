@@ -5,12 +5,13 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Programación a medida: sitios web, e-commerce, sistemas internos, automatizaciones y más.",
-  "Marketing digital inteligente: campañas en redes sociales, SEO, email marketing, branding y análisis de datos.",
-  "Experiencia de usuario (UX/UI): creamos interfaces intuitivas, modernas y enfocadas en la conversión.",
-  "Soporte continuo y optimización: no solo entregamos proyectos, sino que trabajamos contigo para mejorar continuamente la presencia y el rendimiento de tus plataformas a lo largo del tiempo."
-]
-
+  "Entregas Ultra Rápidas: Recibe tus paquetes en tiempo récord con nuestro servicio exprés.",
+  "Cobertura Global y Nacional: Conectamos tu mundo con envíos a más de 100 destinos cada rincón de la República Mexicana.",
+  "Envíos Especializados: Manejamos con cuidado paquetes refrigerados, mercancía de alta prioridad y envíos de hasta 50 kg.",
+  "Máxima Flexibilidad y Control: Elige el tipo de entrega (exprés, estándar o económica) y programa tus envíos en horarios específicos.",
+  "10 Años de Experiencia: Nuestra década en el sector garantiza un servicio confiable, seguro y sin contratiempos.",
+  "Soluciones para Todos: Ofrecemos planes y servicios a la medida tanto para clientes particulares como para grandes empresas."
+];
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -23,7 +24,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/blog2-1.jpg"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
@@ -39,10 +40,7 @@ const Feature = () => {
               ¿Qué hacemos?
             </h3>
             <p className="my-2 text-black-500">
-              En nuestra empresa unimos lo mejor de dos mundos: la tecnología y la creatividad.
-              Nos especializamos en ofrecer soluciones digitales integrales que impulsan el crecimiento de marcas, emprendedores y empresas.
-
-              Desde el desarrollo de plataformas web, aplicaciones personalizadas y sistemas a medida, hasta la creación de estrategias de marketing digital enfocadas en resultados reales.
+             Con más de 10 años de experiencia en el sector, en Rápidos de la Cuenca entendemos la importancia de tu tiempo. Por eso, ofrecemos un servicio de mensajería y paquetería en la Ciudad de México (CDMX) diseñado para ser la solución más confiable y eficiente. Nuestra amplia trayectoria en las calles de la capital garantiza que tus paquetes lleguen a su destino de forma segura y puntual.
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (

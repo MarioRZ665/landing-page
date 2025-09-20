@@ -6,7 +6,7 @@ const defaultMeta = {
   title: 'Rápidos de la Cuenca | Paquetería y Envíos Seguros en México',
   siteName: 'Rápidos de la Cuenca',
   description:
-    'Rápidos de la Cuenca ofrece servicios de paquetería, mensajería y envíos urgentes en todo México. Rastreo en línea, entregas rápidas y seguras a tu destino.',
+    'Con 10 años de experiencia, Rápidos de la Cuenca es tu servicio de mensajería de confianza en la Ciudad de México. Ofrecemos entregas rápidas y eficientes para particulares y empresas. ¡Cotiza tu envío!',
   url: 'https://rapidosdelacuenca.com.mx',
   type: 'website',
   robots: 'follow, index',
