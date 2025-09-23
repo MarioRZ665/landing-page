@@ -8,7 +8,7 @@ import ButtonOutline from "../misc/ButtonOutline.";
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollActive(window.scrollY > 20);
@@ -31,9 +31,9 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             {/* --- AQUÍ SE SUSTITUYÓ LA IMAGEN --- */}
-            <img 
-              src="https://directorio.paqueteriaestrellablanca.com/wp-content/webp-express/webp-images/uploads/2022/10/AF1QipNd0k0VyqGvYJa-cWzPyQ3IA8-7McqA1ngvYq_Uw408-h468-k-no.png.webp" 
-              className="h-20 w-auto" 
+            <img
+              src="https://directorio.paqueteriaestrellablanca.com/wp-content/webp-express/webp-images/uploads/2022/10/AF1QipNd0k0VyqGvYJa-cWzPyQ3IA8-7McqA1ngvYq_Uw408-h468-k-no.png.webp"
+              className="h-20 w-auto"
               alt="Logo Paquetería Estrella Blanca"
             />
           </div>
@@ -113,12 +113,11 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+          
+            {/* --- ESTE ES EL BOTÓN MODIFICADO --- */}
+            <a href="mailto:logistica@rapidosdelacuenca.com.mx?subject=Solicitud%20de%20Información&body=Hola,%0A%0AEstaba%20visitando%20su%20sitio%20web%20y%20me%20gustaría%20recibir%20más%20información.%0A%0AGracias.">
+              <ButtonOutline>Contacto</ButtonOutline>
+            </a>
           </div>
         </nav>
       </header>
