@@ -60,7 +60,7 @@ const Hero = ({
 
             <div className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-5 mt-6">
               <a
-                href="https://wa.me/525555293240?text=Hola,%20me%20gustaría%20cotizar%20un%20envío."
+                href="https://wa.me/522214079186?text=Hola,%20me%20gustaría%20cotizar%20un%20envío."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,12 +72,12 @@ const Hero = ({
                 </ButtonPrimary>
               </a>
               <a
-                href="tel:+525555293240"
+                href="tel:+522214079186"
                 className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white-500 hover:bg-gray-100 hover:shadow-md transition-all duration-300 group"
               >
                 <FiPhoneCall className="text-orange-500 group-hover:scale-110 transition-transform" size={22} />
                 <span className="font-semibold text-black-600 text-lg">
-                  55 5529 3240
+                  22 1407 9186
                 </span>
               </a>
             </div>
