@@ -1,89 +1,65 @@
 import React from "react";
-import LogoVPN from "../../public/assets/Logo.svg";
-import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
+
+const sucursales = [
+  {
+    ciudad: "CIUDAD DE MÉXICO (Cabeza de Juárez)",
+    direccion: [
+      "Central de Carga Oriente",
+      "Av. Transportistas No. 15, Nave 'C' Bodega 26",
+      "Col. Álvaro Obregón, CP 09230, Del. Iztapalapa",
+    ],
+    telefonos: "(55) 2633 7009, 2633 7011, 5529 3240",
+    ocurre: true,
+  },
+  {
+    ciudad: "PUEBLA, PUE",
+    direccion: [
+      "Av. Educadores Esq. Diego Rivera No. 5601",
+      "Local 'I' Col. Satélite 1a Sección CP. 72320",
+    ],
+    telefonos: "01 (222) 236 6160",
+    ocurre: true,
+  },
+  {
+    ciudad: "TUXTEPEC, OAX",
+    direccion: [
+      "Calle 1a Mayo No. 120",
+      "Col. María Luisa CP 68320",
+      "Frente a Dormitorios ADO",
+    ],
+    telefonos: "01 (287) 875 2680",
+    ocurre: true,
+  },
+  {
+    ciudad: "APANGO ACAJETE, PUEBLA",
+    direccion: ["Calle 5 Sur No. 5"],
+    telefonos: "01 (222) 275 7343",
+    ocurre: true,
+  },
+];
+
 const Footer = () => {
   return (
-    <div className="bg-white-300 pt-44 pb-24">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-          <LogoVPN className="h-8 w-auto mb-6" />
-          <p className="mb-4">
-            <strong className="font-medium">Rápidos de la cuenca</strong> es una empres privada de paquetería y mensajería con más de 10 años de experiencia.
-          </p>
-          <div className="flex w-full mt-2 mb-8 -mx-2">
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Facebook className="h-6 w-6" />
+    <footer className="bg-white-300 pt-16 pb-8 border-t border-gray-200">
+      <div className="max-w-screen-xl mx-auto px-6">
+        <p className="text-black-600 mb-6 font-bold text-xl text-center">Sucursales y Teléfonos</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          {sucursales.map((sucursal, idx) => (
+            <div key={idx} className="bg-white rounded-lg shadow p-5 border border-gray-100">
+              <p className="font-semibold text-orange-600 mb-2">{sucursal.ciudad}</p>
+              {sucursal.direccion.map((linea, i) => (
+                <p key={i} className="text-gray-700 text-sm">{linea}</p>
+              ))}
+              <p className="mt-2 text-black-600 font-medium">Tels: <span className="text-black-500">{sucursal.telefonos}</span></p>
+              {sucursal.ocurre && (
+                <p className="italic text-gray-400 text-xs mt-1">Ocurre oficina</p>
+              )}
             </div>
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Twitter className="h-6 w-6" />
-            </div>
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Instagram className="h-6 w-6" />
-            </div>
-          </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - Rápidos de la cuenca</p>
+          ))}
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
-          <ul className="text-black-500 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Download{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Pricing{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Locations{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Server{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Countries{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Blog{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Rápidos de la cuenca ?{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutorials{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Terms of Service{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
-            </li>
-          </ul>
-        </div>
+        <p className="text-gray-400 text-center text-sm">©{new Date().getFullYear()} - Rápidos de la cuenca</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
