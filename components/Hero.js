@@ -17,17 +17,17 @@ import { FiPhoneCall } from "react-icons/fi";
 const Hero = ({
   listUser = [
     {
-      name: "Envíos Diarios",
+      name: "Envíos Realizados Cada Día",
       number: "1,200",
       icon: AiOutlineSchedule,
     },
     {
-      name: "Clientes Empresariales",
+      name: "Empresas que Confían en Nosotros",
       number: "150",
       icon: AiOutlineShop,
     },
     {
-      name: "Ciudades Cubiertas",
+      name: "Ciudades con Cobertura Activa",
       number: "300",
       icon: AiOutlineEnvironment,
     },
@@ -46,13 +46,10 @@ const Hero = ({
           <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <section className="text-center sm:text-left py-12 px-4 bg-white">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
-                Rapidos de la Cuenca: Envíos Rápidos y Seguros
+                Logística Exprés en Todo México con Rapidez y Seguridad Garantizada
               </h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-                Con una década de experiencia, garantizamos la entrega puntual
-                de tus envíos. Ofrecemos soluciones ágiles para entregas locales
-                desde 2 horas, una sólida cobertura en todo México. Somos tu
-                aliado estratégico en logística.
+                Más de 10 años entregando confianza. En Rapidos de la Cuenca te ofrecemos envíos locales desde solo 2 horas, cobertura nacional y soluciones logísticas personalizadas para tu negocio. Puntualidad, seguridad y atención inmediata, todo en un solo lugar.
               </p>
             </section>
 
@@ -66,8 +63,8 @@ const Hero = ({
               >
                 <ButtonPrimary>
                   <span className="flex items-center gap-2">
-                    Cotiza tu Envío
-                    <AiOutlineWhatsApp size={24} />
+                    Cotiza al Instante por WhatsApp
+                    <AiOutlineWhatsApp size={24} aria-hidden="true" />
                   </span>
                 </ButtonPrimary>
               </a>
@@ -80,22 +77,23 @@ const Hero = ({
                 <FiPhoneCall
                   className="text-orange-500 group-hover:scale-110 transition-transform"
                   size={22}
+                  aria-hidden="true"
                 />
                 <span className="font-semibold text-gray-800 text-lg">
-                  22 1407 9186
+                  Llámanos: 22 1407 9186
                 </span>
               </a>
             </div>
 
             {/* Correos de contacto */}
             <div className="mt-6 flex flex-col gap-3">
-              {/* Contacto */}
+              {/* Contacto general */}
               <a
                 href="mailto:contacto@rapidosdelacuenca.com.mx"
                 className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 hover:shadow-md transition-all duration-300"
               >
                 <span className="font-semibold text-gray-800 text-lg">
-                  contacto@rapidosdelacuenca.com.mx
+                  Atención General: contacto@rapidosdelacuenca.com.mx
                 </span>
               </a>
 
@@ -105,7 +103,7 @@ const Hero = ({
                 className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 hover:shadow-md transition-all duration-300"
               >
                 <span className="font-semibold text-gray-800 text-lg">
-                  logistica@rapidosdelacuenca.com.mx
+                  Área de Logística: logistica@rapidosdelacuenca.com.mx
                 </span>
               </a>
             </div>
@@ -141,7 +139,7 @@ const Hero = ({
               >
                 <div className="flex mx-auto w-40 sm:w-auto">
                   <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                    <Icon className="h-6 w-6 text-orange-500" />
+                    <Icon className="h-6 w-6 text-orange-500" aria-hidden="true" />
                   </div>
                   <div className="flex flex-col">
                     <p className="text-xl text-gray-900 font-bold">
