@@ -15,7 +15,7 @@ import {
 import { FiPhoneCall } from "react-icons/fi";
 
 const Hero = ({
-  stats = [
+  listUser = [
     {
       name: "Envíos Diarios",
       number: "1,200",
@@ -44,44 +44,41 @@ const Hero = ({
         >
           {/* Texto Hero */}
           <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
-              Rapidos de la Cuenca: Envíos{" "}
-              {/* CAMBIO: Se añadió color al texto para darle énfasis */}
-              <span className="text-[#4D8C68]">Rápidos y Seguros</span>
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-              Con una década de experiencia, garantizamos la entrega puntual
-              de tus envíos. Ofrecemos soluciones ágiles para entregas locales
-              desde 2 horas, una sólida cobertura en todo México. Somos tu
-              aliado estratégico en logística.
-            </p>
+            <section className="text-center sm:text-left py-12 px-4 bg-white">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
+                Rapidos de la Cuenca: Envíos Rápidos y Seguros
+              </h1>
+              <p className="mt-4 text-lg text-gray-600 max-w-3xl">
+                Con una década de experiencia, garantizamos la entrega puntual
+                de tus envíos. Ofrecemos soluciones ágiles para entregas locales
+                desde 2 horas, una sólida cobertura en todo México. Somos tu
+                aliado estratégico en logística.
+              </p>
+            </section>
 
             {/* Botones de contacto */}
-            <div className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-5 mt-8 flex-wrap">
+            <div className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-5 mt-6 flex-wrap">
               {/* WhatsApp */}
               <a
                 href="https://wa.me/522214079186?text=Hola,%20me%20gustaría%20cotizar%20un%20envío."
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* NOTA: Asegúrate que tu componente ButtonPrimary acepte 'addClass' o modifica sus estilos internos */}
-                {/* CAMBIO: Estilos directos para reflejar el nuevo color. Idealmente, esto iría en el componente ButtonPrimary. */}
-                <button
-                  className="py-3 lg:py-4 px-12 lg:px-16 text-white font-semibold rounded-lg bg-[#4D8C68] hover:bg-[#3E7053] transition-all outline-none flex items-center gap-2"
-                >
-                  Cotiza tu Envío
-                  <AiOutlineWhatsApp size={24} />
-                </button>
+                <ButtonPrimary>
+                  <span className="flex items-center gap-2">
+                    Cotiza tu Envío
+                    <AiOutlineWhatsApp size={24} />
+                  </span>
+                </ButtonPrimary>
               </a>
 
               {/* Teléfono */}
               <a
                 href="tel:+522214079186"
-                className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:border-[#4D8C68] hover:shadow-md transition-all duration-300 group"
+                className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 hover:shadow-md transition-all duration-300 group"
               >
-                {/* CAMBIO: Se cambió el color del ícono */}
                 <FiPhoneCall
-                  className="text-[#4D8C68] group-hover:scale-110 transition-transform"
+                  className="text-orange-500 group-hover:scale-110 transition-transform"
                   size={22}
                 />
                 <span className="font-semibold text-gray-800 text-lg">
@@ -91,20 +88,25 @@ const Hero = ({
             </div>
 
             {/* Correos de contacto */}
-            <div className="mt-8 flex flex-col gap-2">
-              <p className="font-semibold text-gray-500 text-base">O escríbenos a:</p>
-              {/* CAMBIO: Estilo de enlace de correo más limpio */}
+            <div className="mt-6 flex flex-col gap-3">
+              {/* Contacto */}
               <a
                 href="mailto:contacto@rapidosdelacuenca.com.mx"
-                className="text-gray-700 hover:text-[#4D8C68] transition-colors duration-300 font-medium"
+                className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 hover:shadow-md transition-all duration-300"
               >
-                contacto@rapidosdelacuenca.com.mx
+                <span className="font-semibold text-gray-800 text-lg">
+                  contacto@rapidosdelacuenca.com.mx
+                </span>
               </a>
+
+              {/* Logística */}
               <a
                 href="mailto:logistica@rapidosdelacuenca.com.mx"
-                className="text-gray-700 hover:text-[#4D8C68] transition-colors duration-300 font-medium"
+                className="flex items-center gap-3 py-3 px-5 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 hover:shadow-md transition-all duration-300"
               >
-                logistica@rapidosdelacuenca.com.mx
+                <span className="font-semibold text-gray-800 text-lg">
+                  logistica@rapidosdelacuenca.com.mx
+                </span>
               </a>
             </div>
           </div>
@@ -128,20 +130,18 @@ const Hero = ({
       {/* Estadísticas */}
       <div className="relative w-full flex">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white z-10">
-          {stats.map((stat, index) => {
+          {listUser.map((stat, index) => {
             const Icon = stat.icon;
             return (
               <motion.div
                 className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-                key={stat.name} // Usando un key más robusto
+                key={index}
                 custom={{ duration: 2 + index }}
                 variants={scrollAnimation}
               >
                 <div className="flex mx-auto w-40 sm:w-auto">
-                  {/* CAMBIO: Se cambió el color de fondo del círculo */}
-                  <div className="flex items-center justify-center bg-[#EAF3EE] w-12 h-12 mr-6 rounded-full">
-                    {/* CAMBIO: Se cambió el color del ícono */}
-                    <Icon className="h-6 w-6 text-[#4D8C68]" />
+                  <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                    <Icon className="h-6 w-6 text-orange-500" />
                   </div>
                   <div className="flex flex-col">
                     <p className="text-xl text-gray-900 font-bold">
