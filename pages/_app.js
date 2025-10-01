@@ -1,3 +1,4 @@
+// pages/_app.js
 import "../styles/tailwind.css";
 import "../styles/slick.css";
 import Head from "next/head";
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
+
       <Component {...pageProps} />
     </>
   );
