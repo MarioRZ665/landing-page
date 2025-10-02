@@ -1,33 +1,11 @@
 # *
 User-agent: *
 Allow: /
-
-# *
-User-agent: *
 Disallow: /api
-
-# *
-User-agent: *
 Disallow: /admin
-
-# *
-User-agent: *
 Disallow: /login
-
-# *
-User-agent: *
 Disallow: /register
-
-# *
-User-agent: *
-Disallow: /_next
-
-# *
-User-agent: *
 Disallow: /404
-
-# *
-User-agent: *
 Disallow: /500
 
 # Host

@@ -7,14 +7,18 @@ module.exports = {
   priority: 0.7,
   robotsTxtOptions: {
     policies: [
-      { userAgent: '*', allow: '/' },
-      { userAgent: '*', disallow: '/api' },
-      { userAgent: '*', disallow: '/admin' },
-      { userAgent: '*', disallow: '/login' },
-      { userAgent: '*', disallow: '/register' },
-      { userAgent: '*', disallow: '/_next' },
-      { userAgent: '*', disallow: '/404' },
-      { userAgent: '*', disallow: '/500' },
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: [
+          '/api',
+          '/admin',
+          '/login',
+          '/register',
+          '/404',
+          '/500'
+        ],
+      },
     ],
     additionalSitemaps: [
       'https://rapidosdelacuenca.com.mx/sitemap.xml',
