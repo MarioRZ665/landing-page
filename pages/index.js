@@ -11,11 +11,11 @@ export default function Home() {
 				title="Rápidos de la Cuenca | Paquetería y Mensajería Segura en México"
 				description="Envíos rápidos, seguros y confiables con Rápidos de la Cuenca. Rastrea tu paquete en línea, servicio de mensajería foránea y paquetería nacional en todo México."
 				keywords="paquetería en México, mensajería segura, envíos nacionales, rastreo de paquetes, logística México, Rápidos de la Cuenca"
-				canonical="https://www.rapidosdelacuenca.com/"
+				canonical="https://www.rapidosdelacuenca.com.mx/"
 				ogTitle="Rápidos de la Cuenca | Paquetería y Mensajería Segura en México"
 				ogDescription="Tu servicio de paquetería y mensajería confiable en México. Rápidos de la Cuenca: rapidez, seguridad y confianza en cada envío."
-				ogImage="https://www.rapidosdelacuenca.com/images/og-image.jpg"
-				ogUrl="https://www.rapidosdelacuenca.com/"
+				ogImage="https://www.rapidosdelacuenca.com.mx/images/og-image.jpg"
+				ogUrl="https://www.rapidosdelacuenca.com.mx/"
 				twitterCard="summary_large_image"
 				twitterSite="@rapidosdelacuenca"
 			/>
@@ -32,8 +32,8 @@ export default function Home() {
 							"@context": "https://schema.org",
 							"@type": "ParcelService",
 							name: "Rápidos de la Cuenca",
-							url: "https://www.rapidosdelacuenca.com",
-							logo: "https://www.rapidosdelacuenca.com/images/logo.png",
+							url: "https://www.rapidosdelacuenca.com.mx",
+							logo: "https://www.rapidosdelacuenca.com.mx/images/logo.png",
 							description:
 								"Servicio de paquetería y mensajería segura en México. Rastreo en línea, envíos foráneos y logística confiable.",
 							areaServed: {

@@ -6,11 +6,11 @@ const defaultMeta = {
   title: 'Rápidos de la Cuenca | Paquetería y Envíos Seguros en México',
   siteName: 'Rápidos de la Cuenca',
   description:
-    'Con 10 años de experiencia, Rápidos de la Cuenca es tu servicio de mensajería de confianza en la Ciudad de México. Ofrecemos entregas rápidas y eficientes para particulares y empresas. ¡Cotiza tu envío!',
-  url: 'https://rapidosdelacuenca.com.mx',
+    'Tu servicio de paquetería y mensajería confiable en México. Rápidos de la Cuenca: rapidez, seguridad y confianza en cada envío.',
+  url: 'https://www.rapidosdelacuenca.com.mx',
   type: 'website',
   robots: 'follow, index',
-  image: 'https://rapidosdelacuenca.com.mx/assets/card-image.png',
+  image: 'https://www.rapidosdelacuenca.com.mx/assets/card-image.png',
   author: 'Rápidos de la Cuenca'
 };
 
@@ -50,7 +50,7 @@ const SeoHead = (props) => {
       <meta name='robots' content={meta.robots} />
       <meta content={meta.description} name='description' />
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
-      <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+      <link rel='canonical' href={props.canonical || `${meta.url}${router.asPath}`} />
       {/* Open Graph */}
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
