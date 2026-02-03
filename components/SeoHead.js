@@ -49,20 +49,30 @@ const SeoHead = (props) => {
       <title>{meta.title}</title>
       <meta name='robots' content={meta.robots} />
       <meta content={meta.description} name='description' />
+      <meta name='keywords' content={meta.keywords || 'paquetería, mensajería, envíos, México, Rápidos de la Cuenca'} />
+      <meta name='author' content={meta.author} />
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <link rel='canonical' href={props.canonical || `${meta.url}${router.asPath}`} />
+
+      {/* Search Engine Verification */}
+      {meta.googleSiteVerification && (
+        <meta name="google-site-verification" content={meta.googleSiteVerification} />
+      )}
+
       {/* Open Graph */}
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content={meta.image} />
+      <meta property='og:description' content={props.ogDescription || meta.description} />
+      <meta property='og:title' content={props.ogTitle || meta.title} />
+      <meta name='image' property='og:image' content={props.ogImage || meta.image} />
+
       {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@F2aldi' />
-      <meta name='twitter:title' content={meta.title} />
-      <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
+      <meta name='twitter:card' content={props.twitterCard || 'summary_large_image'} />
+      <meta name='twitter:site' content={props.twitterSite || '@rapidosdelacuenca'} />
+      <meta name='twitter:title' content={props.ogTitle || meta.title} />
+      <meta name='twitter:description' content={props.ogDescription || meta.description} />
+      <meta name='twitter:image' content={props.ogImage || meta.image} />
+
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
@@ -90,6 +100,13 @@ const SeoHead = (props) => {
       />
       {/* Accent color on supported browser */}
       <meta name='theme-color' content='#F53838' />
+      {/* JSON-LD Structured Data */}
+      {props.jsonLd && (
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(props.jsonLd) }}
+        />
+      )}
     </Head>
   );
 };
