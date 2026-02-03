@@ -104,7 +104,9 @@ const SeoHead = (props) => {
       {props.jsonLd && (
         <script
           type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(props.jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(Array.isArray(props.jsonLd) ? props.jsonLd : [props.jsonLd])
+          }}
         />
       )}
     </Head>

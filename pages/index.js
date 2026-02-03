@@ -18,29 +18,62 @@ export default function Home() {
 				ogUrl="https://www.rapidosdelacuenca.com.mx/"
 				twitterCard="summary_large_image"
 				twitterSite="@rapidosdelacuenca"
-				jsonLd={{
-					"@context": "https://schema.org",
-					"@type": "ParcelService",
-					"name": "Rápidos de la Cuenca",
-					"url": "https://www.rapidosdelacuenca.com.mx",
-					"logo": "https://www.rapidosdelacuenca.com.mx/images/logo.png",
-					"description": "Servicio de paquetería y mensajería segura en México. Rastreo en línea, envíos foráneos y logística confiable.",
-					"areaServed": {
-						"@type": "Country",
-						"name": "México"
+				jsonLd={[
+					{
+						"@context": "https://schema.org",
+						"@type": "ParcelService",
+						"name": "Rápidos de la Cuenca",
+						"url": "https://www.rapidosdelacuenca.com.mx",
+						"logo": "https://www.rapidosdelacuenca.com.mx/images/logo.png",
+						"description": "Servicio de paquetería y mensajería segura en México. Rastreo en línea, envíos foráneos y logística confiable.",
+						"areaServed": {
+							"@type": "Country",
+							"name": "México"
+						},
+						"contactPoint": {
+							"@type": "ContactPoint",
+							"telephone": "+52-2214079186",
+							"contactType": "customer service",
+							"availableLanguage": ["Spanish", "English"]
+						}
 					},
-					"sameAs": [
-						"https://www.facebook.com/rapidosdelacuenca",
-						"https://twitter.com/rapidosdelacuenca",
-						"https://www.instagram.com/rapidosdelacuenca"
-					],
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"telephone": "+52-2214079186",
-						"contactType": "customer service",
-						"availableLanguage": ["Spanish", "English"]
+					{
+						"@context": "https://schema.org",
+						"@type": "LocalBusiness",
+						"name": "Rápidos de la Cuenca - CDMX",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Av. Transportistas No. 15, Nave 'C' Bodega 26, Central de Carga Oriente",
+							"addressLocality": "Iztapalapa",
+							"addressRegion": "CDMX",
+							"postalCode": "09230",
+							"addressCountry": "MX"
+						},
+						"telephone": "+52-5526337009"
+					},
+					{
+						"@context": "https://schema.org",
+						"@type": "FAQPage",
+						"mainEntity": [
+							{
+								"@type": "Question",
+								"name": "¿Qué servicios de mensajería ofrecen?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Ofrecemos envíos de documentos, paquetes y mercancías de hasta 50 kg con servicios exprés, estándar y económicos en todo México."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Tienen servicio de rastreo de paquetes?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Sí, contamos con seguimiento en línea para todos nuestros envíos nacionales e internacionales para garantizar la seguridad de tu mercancía."
+								}
+							}
+						]
 					}
-				}}
+				]}
 			/>
 			<Layout>
 				<Hero />
