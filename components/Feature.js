@@ -25,7 +25,7 @@ const Feature = () => {
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
               src="/assets/blog2-1.jpg"
-              alt="VPN Illustrasi"
+              alt="Servicio de logística y distribución de Rápidos de la Cuenca"
               layout="responsive"
               quality={100}
               height={414}
@@ -40,7 +40,7 @@ const Feature = () => {
               ¿Qué hacemos?
             </h3>
             <p className="my-2 text-black-500">
-             Con más de 10 años de experiencia en el sector, en Rápidos de la Cuenca entendemos la importancia de tu tiempo. Por eso, ofrecemos un servicio de mensajería y paquetería en la Ciudad de México (CDMX) diseñado para ser la solución más confiable y eficiente. Nuestra amplia trayectoria en las calles de la capital garantiza que tus paquetes lleguen a su destino de forma segura y puntual.
+              Con más de 10 años de experiencia en el sector, en Rápidos de la Cuenca entendemos la importancia de tu tiempo. Por eso, ofrecemos un servicio de mensajería y paquetería en la Ciudad de México (CDMX) diseñado para ser la solución más confiable y eficiente. Nuestra amplia trayectoria en las calles de la capital garantiza que tus paquetes lleguen a su destino de forma segura y puntual.
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (

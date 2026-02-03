@@ -34,7 +34,7 @@ const Header = () => {
             <img
               src="https://directorio.paqueteriaestrellablanca.com/wp-content/webp-express/webp-images/uploads/2022/10/AF1QipNd0k0VyqGvYJa-cWzPyQ3IA8-7McqA1ngvYq_Uw408-h468-k-no.png.webp"
               className="h-20 w-auto"
-              alt="Logo Paquetería Estrella Blanca"
+              alt="Logo Rápidos de la Cuenca"
             />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
@@ -113,7 +113,7 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-          
+
             {/* --- ESTE ES EL BOTÓN MODIFICADO --- */}
             <a href="mailto:logistica@rapidosdelacuenca.com.mx?subject=Solicitud%20de%20Información&body=Hola,%0A%0AEstaba%20visitando%20su%20sitio%20web%20y%20me%20gustaría%20recibir%20más%20información.%0A%0AGracias.">
               <ButtonOutline>Contacto</ButtonOutline>
@@ -188,7 +188,7 @@ const Header = () => {
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
-              Feature
+              Qué hacemos
             </LinkScroll>
             {/* AQUÍ EL CAMBIO para el menú móvil */}
             <LinkScroll

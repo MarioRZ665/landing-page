@@ -95,6 +95,20 @@ const Hero = ({
                   22 1407 9186
                 </span>
               </a>
+              {/* Botón de Rastreo (Placeholder) */}
+              <a
+                href="#pricing"
+                className="flex items-center gap-3 py-3 px-5 rounded-lg border border-orange-500 bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:shadow-md transition-all duration-300 group"
+              >
+                <AiOutlineEnvironment
+                  className="group-hover:scale-110 transition-transform"
+                  size={22}
+                  aria-hidden="true"
+                />
+                <span className="font-semibold text-lg">
+                  Rastrear Paquete
+                </span>
+              </a>
             </div>
 
             {/* Contacto organizado en tarjetas */}
