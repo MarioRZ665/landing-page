@@ -8,6 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<SeoHead
+				googleSiteVerification="fELze3GnzS3ToTlmwbRzDTQMWedjauYnXczzq0HalNg"
 				title="Rápidos de la Cuenca | Paquetería y Mensajería Segura en México"
 				description="Envíos rápidos, seguros y confiables con Rápidos de la Cuenca. Rastrea tu paquete en línea, servicio de mensajería foránea y paquetería nacional en todo México."
 				keywords="paquetería en México, mensajería segura, envíos nacionales, rastreo de paquetes, logística México, Rápidos de la Cuenca, envíos económicos, transporte de carga, mensajería exprés"
