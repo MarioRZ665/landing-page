@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
