@@ -32,7 +32,7 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center">
             {/* --- AQUÍ SE SUSTITUYÓ LA IMAGEN --- */}
             <img
-              src="https://directorio.paqueteriaestrellablanca.com/wp-content/webp-express/webp-images/uploads/2022/10/AF1QipNd0k0VyqGvYJa-cWzPyQ3IA8-7McqA1ngvYq_Uw408-h468-k-no.png.webp"
+              src="/assets/cuenca.svg"
               className="h-20 w-auto"
               alt="Logo Rápidos de la Cuenca"
             />

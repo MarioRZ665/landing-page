@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.rapidosdelacuenca.com.mx
+
+# Sitemaps
+Sitemap: https://www.rapidosdelacuenca.com.mx/sitemap.xml
